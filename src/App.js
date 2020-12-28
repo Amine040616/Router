@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import logo from './logoto.png';
 import './App.css';
 import MovieList from './Components/MovieList';
