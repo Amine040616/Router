@@ -1,0 +1,36 @@
+.addMovie{
+    width: 98%;
+}
+
+.addMovie button{
+    border: none;
+    background-color: rgb(46, 67, 95);
+    margin: 20px 0;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 30pt;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+}
+
+.addMovie button:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.addMovie button:hover h1{
+    color: rgb(46, 67, 95);
+}
+
+.addMovie button:focus {
+    outline: 0;
+}
+
+
+.addMovie h1{
+    color: rgb(255, 255, 255);
+    margin: 10px 0;
+    text-align: center;
+    font-size: 30pt;
+}

@@ -1,17 +1,21 @@
 import React from 'react';
-import { moviesData } from './MovieData';
 import active from '../starFull.png';
 import inactive from '../starEmpty.png';
 
-function Rating(){
+function Rating({rating, setRatingSearch}){
     let arr = [...Array(6).keys()].slice(1);
 return(
-<div style={{height:'20px', display:'flex', flexDirection:'row'}}>
+<div className='starz'>
 {
-    arr.map(el=><img src={el<=moviesData.rating ? active : inactive} alt={el<=moviesData.rating ? 'activeStar' : 'inActiveStar'}/>)
+    arr.map(el=><img src={el<=rating ? active : inactive} id={el} key={el} alt={el<=rating ? 'activeStar' : 'inActiveStar'}  onClick={() => setRatingSearch(el)}/>)
 }
-
 </div>
 )
 }
+
+Rating.defaultProps = {
+    setRatingSearch: () => {},
+    rating: 1,
+};
+
 export default Rating;

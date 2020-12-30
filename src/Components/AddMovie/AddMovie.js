@@ -1,8 +1,9 @@
 import React from 'react';
+import "./AddMovie.css";
 function AddMovie (){
     return(
-        <div>
-            <h1>AddMovie</h1>
+        <div className='addMovie'>
+            <button><h1>+</h1></button>
         </div>
     )
     }

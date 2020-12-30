@@ -1,26 +1,35 @@
 import React from 'react';
 import'./MovieCard.css';
-import Rate from '../Rating'
+import Rating from '../Rating'
 
-function MovieCard ({movie}){
+function openTrailer(alpha){
+    window.open(
+        alpha,'_blank'
+    )
+}
+
+
+function MovieCard ({movie:{trailer, id, name, image, type, date, rating, description, details}}){
+    
     return(
-        <div className="wrapper" id={movie.id}>
+        <div className="wrapper" id={id}>
+            
             <div className="card">
-                <img src={movie.image} alt={movie.name} />
+                <img src={image} alt={name} className="cardimg" />
                 <div className="descriptions">
                     <div>
                         <div className='categYear'>
-                            <span>{movie.type}</span>
-                            <span>{movie.date}</span>
+                            <span>{type}</span>
+                            <span>{date}</span>
                         </div>
-                            <h1>{movie.name}</h1>
-                            <span><Rate /></span>
-                            <p>{movie.description}</p>
-                            <a href={movie.details}>Read more...</a>
+                            <h1>{name}</h1>
+                            <Rating rating={rating}/>
+                            <p>{description}</p>
+                            <a href={details} target='_blank' rel="noreferrer">Read more...</a>
                     </div>
-                    <button>
+                    <button onClick={()=>openTrailer(trailer)}>
                         <i className="fab fa-youtube"></i>
-                        Play trailer on YouTube
+                        <span>Play trailer</span>
                     </button>
                 </div>
             </div>

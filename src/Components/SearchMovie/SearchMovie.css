@@ -1,0 +1,40 @@
+.searchZone{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 98%;
+    height: 60px;
+    background-color: rgb(46, 67, 95);
+    margin: 20px 0;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 30pt;
+    border-radius: 5px;
+
+
+}
+
+/*
+.starz img{
+    cursor: pointer;
+}*/
+
+
+.searchZone input{
+
+    width: 60%;
+    height: 20%;
+    border: 2px solid rgb(108, 205, 250);
+    color: rgb(0, 0, 0);
+    padding: 8px 0 8px 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+
+
+.searchZone input:focus {
+    outline: 0;
+    border-radius: 15px;
+}
