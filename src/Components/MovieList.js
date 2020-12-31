@@ -15,7 +15,7 @@ function MovieList ({movieLista, searchName,ratingSearch}){
         }}>
             {
             movieLista
-            .filter(el=>el.name.includes(searchName) && el.rating>=ratingSearch)
+            .filter(el=>el.name.toLowerCase().includes(searchName.toLowerCase().trim()) && el.rating>=ratingSearch)
             .map((el,i) => (<MovieCard key={i} movie={el} />))
             }
         </div>
