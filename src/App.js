@@ -12,8 +12,10 @@ function App() {
   const [ratingSearch,setRatingSearch]=useState(1);
 
 
-  function addNewMovie(){
-    setmovieLista()
+  function addMovieJdid(event, newMovie){
+    event.preventDefault();
+    setmovieLista([...movieLista, newMovie]);
+    console.log(newMovie.name)
   }
   
 
@@ -22,7 +24,7 @@ function App() {
         
         <SearchMovie setSearchName={setSearchName} setRatingSearch={setRatingSearch} ratingSearch={ratingSearch} />
         <MovieList movieLista={movieLista} searchName={searchName} ratingSearch={ratingSearch} />
-        <AddMovie addNewMovie={addNewMovie} />
+        <AddMovie addMovieJdid={addMovieJdid} />
     </div>
   );
 }
