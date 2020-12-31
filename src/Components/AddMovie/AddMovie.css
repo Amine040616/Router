@@ -16,7 +16,7 @@
 }
 
 .addMovie button:hover {
-    background-color: rgb(255, 255, 255);
+    background-color: wheat;
 }
 
 .addMovie button:hover h1{
@@ -29,7 +29,7 @@
 
 
 .addMovie h1{
-    color: rgb(255, 255, 255);
+    color: wheat;
     margin: 10px 0;
     text-align: center;
     font-size: 30pt;
