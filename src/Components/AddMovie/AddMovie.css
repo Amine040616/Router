@@ -13,6 +13,8 @@
     display: block;
     width: 100%;
     cursor: pointer;
+    line-height: 0.5;
+    height: 60px;
 }
 
 .addMovie button:hover {
@@ -35,12 +37,6 @@
     font-size: 30pt;
 }
 
-
-
-
-
-/* A changer apres */
-
 .modalo {
     border: none;
     background-color: rgb(46, 67, 95);
@@ -55,9 +51,6 @@
     padding: 20px;
     width: 700px;
     color: wheat;
-
-
-
 }
 form h1 {
     text-decoration: underline;
@@ -88,28 +81,28 @@ form input {
     color: grey;
     padding-left: 10px;
     margin-top: 10px;
-  }
-  form label {
+}
+form label {
     margin-top: 20px;
-  }
-  form input:focus {
+}
+form input:focus {
     outline: 0;
-  }
-  form textarea {
+}
+form textarea {
     width: 85%;
     border-radius: 5px;
     border: 1px solid lightgray;
     color: grey;
     padding: 10px;
     margin-top: 10px;
-  }
-  form textarea:focus {
+}
+form textarea:focus {
     outline: 0;
-  }
-  form button {
+}
+form button {
     width: 45%;
     color: rgb(46, 67, 95);
     background-color: wheat;
     height: 30px;
     margin: 20px 0 0 0;
-  }
+}

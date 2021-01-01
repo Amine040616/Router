@@ -1,6 +1,8 @@
 import React from 'react';
 import'./MovieCard.css';
-import Rating from '../Rating'
+import {Link} from 'react-router-dom';
+
+import Rating from '../Rating';
 
 function openTrailer(alpha){
     window.open(
@@ -13,7 +15,7 @@ function MovieCard ({movie:{trailer, id, name, image, type, date, rating, descri
     
     return(
         <div className="wrapper" id={id}>
-            
+            <Link to={`/detail/${id}`}>
             <div className="card">
                 <img src={image} alt={name} className="cardimg" />
                 <div className="descriptions">
@@ -33,6 +35,7 @@ function MovieCard ({movie:{trailer, id, name, image, type, date, rating, descri
                     </button>
                 </div>
             </div>
+        </Link>
     </div>
     )
     }

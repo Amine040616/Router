@@ -1,0 +1,63 @@
+.detailo {
+    border: none;
+    background-color: rgb(46, 67, 95);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 13pt;
+    border-radius: 5px;
+    position: relative;
+    top: 14%;
+    padding: 20px;
+    width: 900px;
+    color: wheat;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+.detailo h1{
+    color:wheat;
+}
+.righto{
+    padding: 20px;
+}
+
+.oneLine{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.deuxColumn{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 450px;
+}
+
+.boutan {
+    width: 45%;
+    color: rgb(46, 67, 95);
+    background-color: wheat;
+    height: 30px;
+    margin: 20px 0 0 0;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13pt;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+.boutan:hover {
+    color: wheat;
+    background-color: rgb(30, 31, 32);
+}
+.deuxBouton{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

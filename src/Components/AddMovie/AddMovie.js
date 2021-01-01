@@ -1,8 +1,11 @@
 import React, {useState} from 'react';
+
 import Rmodal from 'react-modal';
 import Rating from '../Rating';
 import "./AddMovie.css";
+
 Rmodal.setAppElement('#root');
+
 function AddMovie ({addMovieJdid}){
     const [isOpen, setIsOpen]=useState(false);
     const [name, setTitle]=useState('');
